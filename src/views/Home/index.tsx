@@ -1,7 +1,10 @@
+import { Selector } from "../../components/Selector";
+
 export const Home = () => {
+  const fontGrades = ["5a", "5b", "5c", "6a"];
   return (
     <div>
-      <h1>Welcome!</h1>
+      <Selector options={fontGrades} />
     </div>
   );
 };
