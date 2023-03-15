@@ -43,7 +43,7 @@ export const parseGrade = (grade: string): Grade => {
 };
 
 const formatGradeList = (grades: string[]): string => {
-  if (!grades.length) return undefined;
+  if (!grades || !grades.length) return undefined;
   if (grades.length === 1) return grades[0];
   const lowestGrade = grades[0];
   const highestGrade = grades[grades.length - 1];
