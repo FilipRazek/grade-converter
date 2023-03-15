@@ -1,7 +1,7 @@
 .explanation-box__container {
-  height: 200px;
+  margin-top: 1vh;
+  height: 100px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

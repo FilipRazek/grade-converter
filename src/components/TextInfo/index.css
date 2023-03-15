@@ -1,0 +1,20 @@
+.text-info__content {
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  padding: 0 25px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: large;
+}
+
+.text-info__content--important {
+  background-color: lightgreen;
+  border: 1px solid green;
+  font-size: xx-large;
+  height: 70px;
+}
