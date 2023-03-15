@@ -1,0 +1,13 @@
+.text-info__content {
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: large;
+}

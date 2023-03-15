@@ -2,11 +2,11 @@
   font-size: 30px;
   padding: 5px;
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #aaa;
   text-align: center;
   width: 120px;
 }
 
 .user-input__input:focus {
-  outline: 1px solid #aaa;
+  outline: 1px solid #444;
 }
