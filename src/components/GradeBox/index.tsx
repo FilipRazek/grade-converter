@@ -26,13 +26,8 @@ export const GradeBox = ({ grade }: { grade: Grade }) => {
               )}
             />
           )}
-          {grade.modifier && (
-            <TextInfo
-              text={grade.modifier}
-              tooltip={getModifierTooltip(
-                grade.modifier === "+" ? "A little harder" : "A little easier"
-              )}
-            />
+          {grade.type === "font" && grade.plus && (
+            <TextInfo text="+" tooltip={getPlusTooltip("A little harder")} />
           )}
         </>
       ) : (
@@ -54,7 +49,7 @@ const getLetterTooltip = (content: string) => ({
   content,
   id: "letter-tooltip",
 });
-const getModifierTooltip = (content: string) => ({
+const getPlusTooltip = (content: string) => ({
   content,
-  id: "modifier-tooltip",
+  id: "plus-tooltip",
 });

@@ -1,4 +1,5 @@
 .explanation-box__container {
+  margin-top: 1vh;
   height: 100px;
   display: flex;
   justify-content: center;
