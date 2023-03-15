@@ -100,4 +100,19 @@ describe("convertGrade", () => {
     } as const;
     expect(convertGrade(grade)).toEqual("V5");
   });
+  it("should return nothing when passed an unknown V value", () => {
+    const grade = {
+      type: "V",
+      level: 21,
+    } as const;
+    expect(convertGrade(grade)).toBeUndefined();
+  });
+  it("should return nothing when passed an unknown font value", () => {
+    const grade = {
+      type: "font",
+      level: 3,
+      letter: "A",
+    } as const;
+    expect(convertGrade(grade)).toBeUndefined();
+  });
 });
